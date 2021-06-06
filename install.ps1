@@ -25,9 +25,9 @@ Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
 
 # 3) Execute script
-#$global:pathToAssets = "$global:pathToWorkingDir\test-main\"
-#$pathToMainScript = "$global:pathToAssets\InstallModule.ps1"
-#Invoke-Expression -Command $pathToMainScript
+$global:pathToAssets = "$global:pathToWorkingDir\test-main\"
+$pathToMainScript = "$global:pathToAssets\InstallModule.ps1"
+Invoke-Expression -Command $pathToMainScript
 
 
 
