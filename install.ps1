@@ -24,6 +24,8 @@ $outputpath = "$global:pathToWorkingDir\main.zip"
 Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
 
+Import-Module .\InstallModule -Force
+
 # 3) Execute script
 $global:pathToAssets = "$global:pathToWorkingDir\test-main\"
 $pathToMainScript = "$global:pathToAssets\InstallModule.ps1"
