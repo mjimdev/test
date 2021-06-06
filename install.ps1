@@ -27,7 +27,7 @@ Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDi
 # 3) Execute script
 Import-Module .\InstallModule -Force #-Verbose #-Force
  
-
+Import-Module "$PSScriptRoot\InstallModule" -Force #-Verbose #-Force
 
 
 
