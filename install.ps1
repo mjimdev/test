@@ -29,19 +29,3 @@ $global:pathToAssets = "$global:pathToWorkingDir\Ed-Fi-BinariesPowerShellInstall
 $pathToMainScript = "$global:pathToAssets\binaryInstall.ps1"
 Invoke-Expression -Command $pathToMainScript
 
-
-
-Write-HostInfo "Wrapper for the Ed-Fi binary installers."
-Write-Host "To install Ed-Fi run any of the following commands:" 
-Write-HostStep " Ed-Fi ODS/APi & Tools 5.2.0"
-Write-Host " Install-EdFi520Sandbox"
-Write-Host " Install-EdFi520SharedInstance"
-Write-Host " Install-EdFi520SandboxTPDM"
-Write-Host " Install-EdFi520SharedInstanceTPDM"
-Write-HostStep " Other Tools:"
-Write-Host "    Install-TPDMDescriptors 'apiURL' 'key' 'secret'"
-Write-Host "    Install-Chocolatey" 
-Write-Host "    Install-Chrome" 
-Write-Host "    Install-MsSSMS"
-Write-Host "    Install-NotepadPlusPlus"
-Write-Host "" 
