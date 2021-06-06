@@ -25,7 +25,7 @@ Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
 
 # 3) Execute script
-Import-Module "$PSScriptRoot\test-main\InstallModule" -Force #-Verbose #-Force
+Import-Module "$PSScriptRoot\InstallModule" -Force #-Verbose #-Force
  
 
 
