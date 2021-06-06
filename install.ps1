@@ -26,11 +26,11 @@ Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDi
 
 # 3) Execute script
 #$global:pathToAssets = "$global:pathToWorkingDir\Ed-Fi-BinariesPowerShellInstaller-main\"
-#$pathToMainScript = "$global:pathToAssets\binaryInstall.ps1"
+#$pathToMainScript = "$global:pathToAssets\InstallModule.ps1"
 #Invoke-Expression -Command $pathToMainScript
 
 
-Import-Module .\InstallModule -Force
+
 
 Write-HostInfo "Wrapper for the Ed-Fi binary installers."
 Write-Host "To install Ed-Fi run any of the following commands:" 
