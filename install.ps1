@@ -25,9 +25,9 @@ Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
 
 # 3) Execute script
-Import-Module .\InstallModule -Force #-Verbose #-Force
- 
-Import-Module "$PSScriptRoot\InstallModule" -Force #-Verbose #-Force
+$global:pathToAssets = "$global:pathToWorkingDir\Ed-Fi-BinariesPowerShellInstaller-main\"
+$pathToMainScript = "$global:pathToAssets\binaryInstall.ps1"
+Invoke-Expression -Command $pathToMainScript
 
 
 
