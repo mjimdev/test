@@ -25,7 +25,7 @@ Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
 
 # 3) Execute script
-$global:pathToAssets = "$global:pathToWorkingDir\Ed-Fi-BinariesPowerShellInstaller-main\"
+$global:pathToAssets = "$global:pathToWorkingDir\test-main\"
 $pathToMainScript = "$global:pathToAssets\binaryInstall.ps1"
 Invoke-Expression -Command $pathToMainScript
 
