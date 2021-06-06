@@ -19,7 +19,7 @@ New-Item -ItemType Directory -Force -Path $pathToWorkingDir
 
 
 # 2) Download and unzip the github powershell scripts (in zip format)
-$packageUrl = "https://github.com/Nearshore-Devs/Ed-Fi-TPDM-Installer/archive/main.zip"
+$packageUrl = "https://github.com/mjimdev/test/archive/main.zip"
 $outputpath = "$global:pathToWorkingDir\main.zip"
 Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
